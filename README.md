@@ -15,3 +15,5 @@ Assertions of confirmation messages throughout
 All data is fully dynamic, read from and written to files with no hard-coded values.
 
 # **Plz wait for GIF file to load**
+
+![Image](https://github.com/user-attachments/assets/ed382097-ff92-468f-8632-f95316beffb3)
