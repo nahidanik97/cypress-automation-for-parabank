@@ -3,7 +3,9 @@ import { interceptUrls, } from '../../cypress/support/urls'
 
 describe('REGISTRATION > LOGOUT > LOGIN', function () {
     beforeEach(function () {
+        cy.wait(500)
         cy.visit(Cypress.env('baseUrl'))
+        cy.wait(500)
     })
 
     it('Registratiom and logout', function () {
@@ -29,7 +31,7 @@ describe('REGISTRATION > LOGOUT > LOGIN', function () {
         cy.get(elements.registerButton).should('be.visible').click()
 
         // confirmation
-        cy.get(elements.registratiomConfirmation).should('be.visible').contains(messages.registrationConfirmation)
+        cy.get(elements.registrationConfirmation).should('be.visible').contains(messages.registrationConfirmation)
 
         // logout
         cy.get(elements.accountServicesPanel).contains(data.logoutButtonText).click()

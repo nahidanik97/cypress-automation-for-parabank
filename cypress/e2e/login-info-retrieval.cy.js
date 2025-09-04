@@ -4,7 +4,9 @@ import { filePath } from '../support/paths'
 
 describe('LOGIN INFO RETRIEVAL', function () {
     beforeEach(function () {
+        cy.wait(500)
         cy.visit(Cypress.env('baseUrl'))
+        cy.wait(500)
     })
 
     it('Retrieve login info', function () {
@@ -29,8 +31,11 @@ describe('LOGIN INFO RETRIEVAL', function () {
         cy.get(elements.customerLookupPanel).within(() => {
             cy.contains('Username').then(($el) => {
                 const username = $el[0].nextSibling.textContent.replace(':', '').trim()
+                cy.log(username).wait(500)
+
                 cy.contains('Password').then(($el2) => {
                     const password = $el2[0].nextSibling.textContent.replace(':', '').trim()
+                    cy.log(password).wait(500)
 
                     cy.writeFile(filePath.basePath + filePath.loginInfo + filePath.fileExtension, {
                         username: username,

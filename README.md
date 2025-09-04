@@ -1,14 +1,15 @@
 # Cypress Project
+Cypress Automation for Parabank
 
-## 🚀 Setup
-1. Run `npm install`
-2. Open Cypress Test Runner with `npx cypress open`
-3. Or run all tests with `npm test`
+End-to-end automation of Parabank 
+using Cypress with both UI and API testing. The project covers a full user journey:
 
-## 📂 Included
-- **UI tests** (`cypress/e2e/ui-tests.cy.js`)
-- **API tests** (`cypress/e2e/api-tests.cy.js`)
-- **Fixtures** (`cypress/fixtures/example.json`)
-- **Custom commands** (`cypress/support/commands.js`)
+Dynamic user registration, login, and logout
 
-Enjoy testing! 🎉
+Retrieve credentials via "Forgot Password"
+
+Open a new account and validate balance
+
+Assertions of confirmation messages throughout
+
+All data is fully dynamic, read from and written to files with no hard-coded values.
