@@ -14,4 +14,4 @@ Assertions of confirmation messages throughout
 
 All data is fully dynamic, read from and written to files with no hard-coded values.
 
-**Plz wait for GIF file to load**
+# **Plz wait for GIF file to load**
