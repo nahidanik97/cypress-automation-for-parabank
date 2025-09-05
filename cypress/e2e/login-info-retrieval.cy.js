@@ -42,6 +42,9 @@ describe('LOGIN INFO RETRIEVAL', function () {
                         password: password
                     })
                 })
+
+                cy.screenshot('login Info')
+
             })
         })
 
